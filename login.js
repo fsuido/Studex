@@ -1,4 +1,5 @@
-const API = 'http://localhost:3000/api';
+// const API = 'http://localhost:3000/api';
+const API = 'https://studex-backend-vgk5.onrender.com/api';
 
 async function login() {
   const usuario = document.getElementById("usuario").value;
