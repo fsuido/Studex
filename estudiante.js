@@ -1,4 +1,5 @@
-const API = 'http://localhost:3000/api';
+// const API = 'http://localhost:3000/api';
+const API = 'https://studex-backend-vgk5.onrender.com/api';
 const usuario = localStorage.getItem("usuarioLogeado");
 
 async function cargarNotas() {
