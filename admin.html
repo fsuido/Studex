@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel Administrador</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside>
+  <h2>STUDEX</h2>
+
+  <a class="active">Panel</a>
+  <!-- <a>Crear usuarios</a> -->
+  <a onclick="logout()">Cerrar sesión</a>
+
+</aside>
+
+<!-- CONTENIDO -->
+<main>
+
+<h1>Panel de Administrador</h1>
+
+<!-- CARDS -->
+<div class="cards"> 
+
+<div class="card">
+<h3>Usuarios</h3>
+<p id="totalUsuarios">0</p>
+</div>
+
+<div class="card">
+<h3>Profesores</h3>
+<p id="totalProfesores">0</p>
+</div>
+
+<div class="card">
+<h3>Estudiantes</h3>
+<p id="totalEstudiantes">0</p>
+</div>
+
+</div>
+
+<!-- FORMULARIO -->
+<h2>Crear Usuario</h2>
+
+<div class="form">
+
+<input type="text" id="nuevoUsuario" placeholder="Nombre de usuario">
+
+<input type="password" id="nuevoPassword" placeholder="Contraseña">
+
+<select id="rol">
+
+<option value="estudiante">Estudiante</option>
+<option value="profesor">Profesor</option>
+
+</select>
+
+<button onclick="crearUsuario()">Crear Usuario</button>
+
+</div>
+
+<!-- TABLA DE USUARIOS -->
+
+<h2>Usuarios registrados</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Usuario</th>
+<th>Rol</th>
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaUsuarios">
+
+</tbody>
+
+</table>
+
+</main>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

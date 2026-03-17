@@ -31,7 +31,7 @@ body {
   margin: 10px 0;
 }
 
-.btn-primary {
+#boton{
   width: 100%;
   padding: 12px;
   background: #0066ff;
@@ -40,14 +40,7 @@ body {
   margin-top: 10px;
 }
 
-.btn-secondary {
-  width: 100%;
-  padding: 12px;
-  background: #00a86b;
-  color: white;
-  border: none;
-  margin-top: 10px;
-}
+
 
 /* LAYOUT */
 .layout {
@@ -113,6 +106,7 @@ th {
 td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
 .ok { color: green; }
@@ -129,4 +123,119 @@ td {
   background: #0066ff;
   color: white;
   border: none;
+}
+.form select{
+  padding:10px;
+  margin:10px 0;
+  width:100%;
+}
+/* Hover en filas */
+tbody tr:hover{
+  background:#f1f5f9;
+}
+
+/* Botones de acción */
+.btn-delete{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:6px 10px;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.btn-edit{
+  background:#f59e0b;
+  color:white;
+  border:none;
+  padding:6px 10px;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.btn-delete:hover{
+  background:#dc2626;
+}
+
+.btn-edit:hover{
+  background:#d97706;
+}
+
+/* SELECT MATERIAS */
+
+select{
+width: 100%;
+padding: 12px;
+margin: 15px 0;
+border-radius: 8px;
+border: 1px solid #ccc;
+font-size: 14px;
+background: white;
+cursor: pointer;
+transition: 0.2s;
+}
+
+select:focus{
+outline: none;
+border-color: #0066ff;
+box-shadow: 0 0 5px rgba(0,102,255,0.3);
+}
+
+
+/* BOTONES GENERALES */
+
+button{
+padding: 10px 16px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-weight: bold;
+transition: 0.2s;
+}
+
+
+/* BOTON GUARDAR */
+
+.form button{
+background: #0066ff;
+color: white;
+width: 100%;
+margin-top: 10px;
+}
+
+.form button:hover{
+background: #0052cc;
+}
+
+
+/* BOTON EDITAR */
+
+button.editar{
+background: #f59e0b;
+color: white;
+margin-right: 5px;
+}
+
+button.editar:hover{
+background: #d97706;
+}
+
+
+/* BOTON ELIMINAR */
+
+button.eliminar{
+background: #ef4444;
+color: white;
+}
+
+button.eliminar:hover{
+background: #dc2626;
+}
+
+
+/* BOTONES DENTRO DE TABLAS */
+
+td button{
+padding: 6px 10px;
+font-size: 13px;
 }

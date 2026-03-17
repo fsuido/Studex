@@ -5,6 +5,7 @@
 <title>Profesor</title>
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <div class="layout">
@@ -12,45 +13,58 @@
 <aside>
   <h2>👨‍🏫 Profesor</h2>
   <a class="active">Gestionar Notas</a>
-  <a>Estudiantes</a>
-  <a>Reportes</a>
+  <!-- <a>Estudiantes</a> -->
+  <!-- <a>Reportes</a> -->
   <a href="login.html">Cerrar sesión</a>
 </aside>
 
 <main>
-<h1>Panel del Profesor</h1>
 
-<h2>Registrar / Editar Notas</h2>
+<h2>Seleccionar Materia</h2>
 
-<form class="form">
-  <input placeholder="Nombre del estudiante">
-  <input placeholder="Materia">
-  <input placeholder="Nota">
-  <button>Guardar Nota</button>
+<select id="materiaSeleccionada" onchange="mostrarFormulario()">
+  <option value="">Seleccione una materia</option>
+  <option value="Programación">Programación</option>
+  <option value="Bases de Datos">Bases de Datos</option>
+  <option value="Matemáticas">Matemáticas</option>
+  <option value="Inglés">Inglés</option>
+</select>
+
+<!-- FORMULARIO -->
+<form class="form" id="formNotas" style="display:none;" onsubmit="guardarNota(event)">
+
+<input id="estudiante" placeholder="Nombre del estudiante" required>
+
+<!-- <input id="nota" placeholder="Nota" type="number" step="0.1" required> -->
+<input id="nota" placeholder="Nota" type="number" min="0" max="5" step="0.1" required>
+<button>Guardar Nota</button>
+
 </form>
 
-<h2>Listado de estudiantes</h2>
+<h2>Listado de Notas</h2>
 
 <table>
-  <tr>
-    <th>Estudiante</th>
-    <th>Materia</th>
-    <th>Nota</th>
-  </tr>
-  <tr>
-    <td>Juan Felipe</td>
-    <td>Programación</td>
-    <td>4.8</td>
-  </tr>
-  <tr>
-    <td>Laura Pérez</td>
-    <td>Bases de Datos</td>
-    <td>3.9</td>
-  </tr>
+
+<thead>
+<tr>
+<th>Estudiante</th>
+<th>Materia</th>
+<th>Nota</th>
+<th>Acciones</th>
+</tr>
+</thead>
+
+<tbody id="tablaNotas">
+
+</tbody>
+
 </table>
 
 </main>
+
 </div>
+
+<script src="profesor.js"></script>
 
 </body>
 </html>

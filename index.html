@@ -1,71 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Sistema de Notas</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+<title>Login | Sistema de Notas</title>
+<meta name="description" content="sistema de gestion de calificasiones para escuelas primaria y bachillerato">
+<meta name="keywords" content="creacion ,eliminacion y actualizacion de notas congestion de useuarios">
+<meta name="author" content="juan felipe villamizar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-<div class="login-container">
-  <h2>Sistema de Notas</h2>
-  <input type="text" placeholder="Usuario">
-  <input type="password" placeholder="Contraseña">
-  <button>Ingresar</button>
+<body class="login-body">
+
+<div class="login-box">
+  <h2>Plataforma Académica</h2>
+  <p>Ingreso al sistema de notas</p>
+
+  <input type="text" id="usuario" placeholder="Usuario">
+<input type="password" id="password" placeholder="Contraseña">
+
+<button id="boton" onclick="login()">Ingresar</button>
+
+<script src="usuarios.js"></script>
+<script src="login.js"></script>
+
 </div>
 
-<div class="dashboard">
-  <header>
-    <h1>Panel del Estudiante</h1>
-    <span>Juan Felipe Villamizar</span>
-  </header>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Promedio</h3>
-      <p>4.3</p>
-    </div>
-    <div class="card">
-      <h3>Materias</h3>
-      <p>5</p>
-    </div>
-    <div class="card">
-      <h3>Créditos</h3>
-      <p>18</p>
-    </div>
-  </div>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Materia</th>
-        <th>Docente</th>
-        <th>Nota</th>
-        <th>Estado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Programación</td>
-        <td>Ing. Torres</td>
-        <td>4.5</td>
-        <td class="aprobado">Aprobado</td>
-      </tr>
-      <tr>
-        <td>Bases de Datos</td>
-        <td>Ing. Ríos</td>
-        <td>3.8</td>
-        <td class="aprobado">Aprobado</td>
-      </tr>
-      <tr>
-        <td>Matemáticas</td>
-        <td>Lic. Gómez</td>
-        <td>2.9</td>
-        <td class="reprobado">Reprobado</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 </body>
 </html>

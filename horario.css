@@ -1,0 +1,57 @@
+
+
+.horario-container{
+margin-top:20px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+.horario{
+width:100%;
+border-collapse: collapse;
+}
+
+
+
+.horario th{
+background:#0066ff;
+color:white;
+padding:12px;
+text-align:center;
+}
+
+
+.horario td{
+border:1px solid #ddd;
+padding:15px;
+text-align:center;
+height:60px;
+font-weight:500;
+}
+
+
+.horario td:hover{
+background:#f1f5f9;
+}
+
+
+
+.prog{
+background:#dbeafe;
+}
+
+.bd{
+background:#dcfce7;
+}
+
+.mate{
+background:#fef9c3;
+}
+
+.ing{
+background:#fde2e2;
+}
