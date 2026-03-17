@@ -1,5 +1,5 @@
-const API = 'http://localhost:3000/api';
-
+// const API = 'http://localhost:3000/api';
+const API = 'https://studex-backend-vgk5.onrender.com/api';
 async function cargarUsuarios() {
   const res = await fetch(`${API}/usuarios`);
   const usuarios = await res.json();
