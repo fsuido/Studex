@@ -1,4 +1,6 @@
-const API = 'http://localhost:3000/api';
+// const API = 'http://localhost:3000/api';
+const API = 'https://studex-backend-vgk5.onrender.com/api';
+
 let idEditar = null;
 
 function mostrarFormulario() {
